@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18796EC718764A5B0031AFDC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18796EC618764A5B0031AFDC /* Cocoa.framework */; };
+		18796ED118764A5B0031AFDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18796ECF18764A5B0031AFDC /* InfoPlist.strings */; };
+		18796ED318764A5B0031AFDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18796ED218764A5B0031AFDC /* main.m */; };
+		18796ED718764A5B0031AFDC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 18796ED518764A5B0031AFDC /* Credits.rtf */; };
+		18796EDA18764A5B0031AFDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18796ED918764A5B0031AFDC /* AppDelegate.m */; };
+		18796EDD18764A5B0031AFDC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18796EDB18764A5B0031AFDC /* MainMenu.xib */; };
+		18796EDF18764A5B0031AFDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18796EDE18764A5B0031AFDC /* Images.xcassets */; };
+		18796EE618764A5B0031AFDC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18796EE518764A5B0031AFDC /* XCTest.framework */; };
+		18796EE718764A5B0031AFDC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18796EC618764A5B0031AFDC /* Cocoa.framework */; };
+		18796EEF18764A5B0031AFDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18796EED18764A5B0031AFDC /* InfoPlist.strings */; };
+		18796EF118764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18796EF018764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18796EE818764A5B0031AFDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18796EBB18764A5B0031AFDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18796EC218764A5B0031AFDC;
+			remoteInfo = "QLab CasparCG ATEM Bridge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18796EC318764A5B0031AFDC /* QLab CasparCG ATEM Bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QLab CasparCG ATEM Bridge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18796EC618764A5B0031AFDC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		18796EC918764A5B0031AFDC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		18796ECA18764A5B0031AFDC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		18796ECB18764A5B0031AFDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18796ECE18764A5B0031AFDC /* QLab CasparCG ATEM Bridge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QLab CasparCG ATEM Bridge-Info.plist"; sourceTree = "<group>"; };
+		18796ED018764A5B0031AFDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18796ED218764A5B0031AFDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18796ED418764A5B0031AFDC /* QLab CasparCG ATEM Bridge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QLab CasparCG ATEM Bridge-Prefix.pch"; sourceTree = "<group>"; };
+		18796ED618764A5B0031AFDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		18796ED818764A5B0031AFDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18796ED918764A5B0031AFDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18796EDC18764A5B0031AFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		18796EDE18764A5B0031AFDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18796EE418764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QLab CasparCG ATEM BridgeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18796EE518764A5B0031AFDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18796EEC18764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QLab CasparCG ATEM BridgeTests-Info.plist"; sourceTree = "<group>"; };
+		18796EEE18764A5B0031AFDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18796EF018764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLab_CasparCG_ATEM_BridgeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18796EC018764A5B0031AFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18796EC718764A5B0031AFDC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18796EE118764A5B0031AFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18796EE718764A5B0031AFDC /* Cocoa.framework in Frameworks */,
+				18796EE618764A5B0031AFDC /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18796EBA18764A5B0031AFDC = {
+			isa = PBXGroup;
+			children = (
+				18796ECC18764A5B0031AFDC /* QLab CasparCG ATEM Bridge */,
+				18796EEA18764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests */,
+				18796EC518764A5B0031AFDC /* Frameworks */,
+				18796EC418764A5B0031AFDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18796EC418764A5B0031AFDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18796EC318764A5B0031AFDC /* QLab CasparCG ATEM Bridge.app */,
+				18796EE418764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18796EC518764A5B0031AFDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18796EC618764A5B0031AFDC /* Cocoa.framework */,
+				18796EE518764A5B0031AFDC /* XCTest.framework */,
+				18796EC818764A5B0031AFDC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18796EC818764A5B0031AFDC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18796EC918764A5B0031AFDC /* AppKit.framework */,
+				18796ECA18764A5B0031AFDC /* CoreData.framework */,
+				18796ECB18764A5B0031AFDC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		18796ECC18764A5B0031AFDC /* QLab CasparCG ATEM Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				18796ED818764A5B0031AFDC /* AppDelegate.h */,
+				18796ED918764A5B0031AFDC /* AppDelegate.m */,
+				18796EDB18764A5B0031AFDC /* MainMenu.xib */,
+				18796EDE18764A5B0031AFDC /* Images.xcassets */,
+				18796ECD18764A5B0031AFDC /* Supporting Files */,
+			);
+			path = "QLab CasparCG ATEM Bridge";
+			sourceTree = "<group>";
+		};
+		18796ECD18764A5B0031AFDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18796ECE18764A5B0031AFDC /* QLab CasparCG ATEM Bridge-Info.plist */,
+				18796ECF18764A5B0031AFDC /* InfoPlist.strings */,
+				18796ED218764A5B0031AFDC /* main.m */,
+				18796ED418764A5B0031AFDC /* QLab CasparCG ATEM Bridge-Prefix.pch */,
+				18796ED518764A5B0031AFDC /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18796EEA18764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				18796EF018764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m */,
+				18796EEB18764A5B0031AFDC /* Supporting Files */,
+			);
+			path = "QLab CasparCG ATEM BridgeTests";
+			sourceTree = "<group>";
+		};
+		18796EEB18764A5B0031AFDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18796EEC18764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests-Info.plist */,
+				18796EED18764A5B0031AFDC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18796EC218764A5B0031AFDC /* QLab CasparCG ATEM Bridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18796EF418764A5B0031AFDC /* Build configuration list for PBXNativeTarget "QLab CasparCG ATEM Bridge" */;
+			buildPhases = (
+				18796EBF18764A5B0031AFDC /* Sources */,
+				18796EC018764A5B0031AFDC /* Frameworks */,
+				18796EC118764A5B0031AFDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QLab CasparCG ATEM Bridge";
+			productName = "QLab CasparCG ATEM Bridge";
+			productReference = 18796EC318764A5B0031AFDC /* QLab CasparCG ATEM Bridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18796EE318764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18796EF718764A5B0031AFDC /* Build configuration list for PBXNativeTarget "QLab CasparCG ATEM BridgeTests" */;
+			buildPhases = (
+				18796EE018764A5B0031AFDC /* Sources */,
+				18796EE118764A5B0031AFDC /* Frameworks */,
+				18796EE218764A5B0031AFDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18796EE918764A5B0031AFDC /* PBXTargetDependency */,
+			);
+			name = "QLab CasparCG ATEM BridgeTests";
+			productName = "QLab CasparCG ATEM BridgeTests";
+			productReference = 18796EE418764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18796EBB18764A5B0031AFDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Blair McMillan";
+				TargetAttributes = {
+					18796EE318764A5B0031AFDC = {
+						TestTargetID = 18796EC218764A5B0031AFDC;
+					};
+				};
+			};
+			buildConfigurationList = 18796EBE18764A5B0031AFDC /* Build configuration list for PBXProject "QLab CasparCG ATEM Bridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18796EBA18764A5B0031AFDC;
+			productRefGroup = 18796EC418764A5B0031AFDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18796EC218764A5B0031AFDC /* QLab CasparCG ATEM Bridge */,
+				18796EE318764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18796EC118764A5B0031AFDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18796ED118764A5B0031AFDC /* InfoPlist.strings in Resources */,
+				18796EDF18764A5B0031AFDC /* Images.xcassets in Resources */,
+				18796ED718764A5B0031AFDC /* Credits.rtf in Resources */,
+				18796EDD18764A5B0031AFDC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18796EE218764A5B0031AFDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18796EEF18764A5B0031AFDC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18796EBF18764A5B0031AFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18796EDA18764A5B0031AFDC /* AppDelegate.m in Sources */,
+				18796ED318764A5B0031AFDC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18796EE018764A5B0031AFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18796EF118764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18796EE918764A5B0031AFDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18796EC218764A5B0031AFDC /* QLab CasparCG ATEM Bridge */;
+			targetProxy = 18796EE818764A5B0031AFDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18796ECF18764A5B0031AFDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18796ED018764A5B0031AFDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18796ED518764A5B0031AFDC /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18796ED618764A5B0031AFDC /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		18796EDB18764A5B0031AFDC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18796EDC18764A5B0031AFDC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		18796EED18764A5B0031AFDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18796EEE18764A5B0031AFDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18796EF218764A5B0031AFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		18796EF318764A5B0031AFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		18796EF518764A5B0031AFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Prefix.pch";
+				INFOPLIST_FILE = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18796EF618764A5B0031AFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Prefix.pch";
+				INFOPLIST_FILE = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18796EF818764A5B0031AFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QLab CasparCG ATEM Bridge.app/Contents/MacOS/QLab CasparCG ATEM Bridge";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QLab CasparCG ATEM BridgeTests/QLab CasparCG ATEM BridgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18796EF918764A5B0031AFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QLab CasparCG ATEM Bridge.app/Contents/MacOS/QLab CasparCG ATEM Bridge";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Prefix.pch";
+				INFOPLIST_FILE = "QLab CasparCG ATEM BridgeTests/QLab CasparCG ATEM BridgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18796EBE18764A5B0031AFDC /* Build configuration list for PBXProject "QLab CasparCG ATEM Bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18796EF218764A5B0031AFDC /* Debug */,
+				18796EF318764A5B0031AFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18796EF418764A5B0031AFDC /* Build configuration list for PBXNativeTarget "QLab CasparCG ATEM Bridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18796EF518764A5B0031AFDC /* Debug */,
+				18796EF618764A5B0031AFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18796EF718764A5B0031AFDC /* Build configuration list for PBXNativeTarget "QLab CasparCG ATEM BridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18796EF818764A5B0031AFDC /* Debug */,
+				18796EF918764A5B0031AFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18796EBB18764A5B0031AFDC /* Project object */;
+}
