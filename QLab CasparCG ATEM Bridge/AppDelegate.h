@@ -7,9 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class GCDAsyncSocket;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    GCDAsyncSocket *asyncSocket;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *ipAddressTextField;
+@property (weak) IBOutlet NSTextField *portTextField;
+@property (weak) IBOutlet NSButton *connectButton;
+@property (weak) IBOutlet NSTextField *commandTextField;
+@property (weak) IBOutlet NSButton *sendCommandButton;
 
 @end
