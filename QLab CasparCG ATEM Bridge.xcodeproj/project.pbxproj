@@ -20,6 +20,7 @@
 		18796EF118764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18796EF018764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m */; };
 		18B6298F189F34170069C43F /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6298E189F34170069C43F /* GCDAsyncSocket.m */; };
 		18B62991189F344A0069C43F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B62990189F344A0069C43F /* Security.framework */; };
+		18FFF86518ADE6D000F2C31A /* ACLPro.icns in Resources */ = {isa = PBXBuildFile; fileRef = 18FFF86418ADE6D000F2C31A /* ACLPro.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		18B6298D189F34170069C43F /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		18B6298E189F34170069C43F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		18B62990189F344A0069C43F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18FFF86418ADE6D000F2C31A /* ACLPro.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ACLPro.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		18796EBA18764A5B0031AFDC = {
 			isa = PBXGroup;
 			children = (
+				18FFF86418ADE6D000F2C31A /* ACLPro.icns */,
 				18796ECC18764A5B0031AFDC /* QLab CasparCG ATEM Bridge */,
 				18796EEA18764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests */,
 				18796EC518764A5B0031AFDC /* Frameworks */,
@@ -241,6 +244,7 @@
 			files = (
 				18796ED118764A5B0031AFDC /* InfoPlist.strings in Resources */,
 				18796EDF18764A5B0031AFDC /* Images.xcassets in Resources */,
+				18FFF86518ADE6D000F2C31A /* ACLPro.icns in Resources */,
 				18796ED718764A5B0031AFDC /* Credits.rtf in Resources */,
 				18796EDD18764A5B0031AFDC /* MainMenu.xib in Resources */,
 			);
@@ -392,7 +396,6 @@
 		18796EF518764A5B0031AFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Prefix.pch";
@@ -405,7 +408,6 @@
 		18796EF618764A5B0031AFDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Prefix.pch";
