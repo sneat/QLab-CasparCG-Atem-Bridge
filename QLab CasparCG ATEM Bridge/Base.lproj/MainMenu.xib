@@ -16,7 +16,7 @@
                 <menuItem title="QLab CasparCG ATEM Bridge" id="56">
                     <menu key="submenu" title="QLab CasparCG ATEM Bridge" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About QLab CasparCG ATEM Bridge" id="58">
+                            <menuItem title="About QLab CasparCG ATEM Bridge" state="on" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
@@ -665,6 +665,7 @@
                         <accessibility description="Access Description" help="Access Help"/>
                         <connections>
                             <action selector="handleConnectButtonClick:" target="494" id="mvU-tG-sUr"/>
+                            <outlet property="nextKeyView" destination="b0c-h0-OPp" id="w7x-qr-SPQ"/>
                         </connections>
                     </button>
                     <textField toolTip="IP Address" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kYi-3b-54I">
@@ -675,6 +676,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="exx-9g-5wv" id="gXS-3Z-cFk"/>
+                        </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWT-Tj-UjN">
                         <rect key="frame" x="20" y="323" width="74" height="17"/>
@@ -702,6 +706,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="w1J-hH-0Cb" id="lcl-JV-cA2"/>
+                        </connections>
                     </textField>
                     <button hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y39-jE-rdi">
                         <rect key="frame" x="205" y="13" width="71" height="32"/>
@@ -713,6 +720,7 @@
                         <accessibility description="SendCommandButton"/>
                         <connections>
                             <action selector="sendCommandButton:" target="494" id="7b0-zE-Dzy"/>
+                            <outlet property="nextKeyView" destination="kYi-3b-54I" id="lbd-wD-COG"/>
                         </connections>
                     </button>
                     <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ZX-tR-M6Q">
@@ -724,6 +732,9 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <accessibility description="CommandTextField"/>
+                        <connections>
+                            <outlet property="nextKeyView" destination="Y39-jE-rdi" id="ZO7-Qj-pA3"/>
+                        </connections>
                     </textField>
                     <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lp0-CX-Xc6">
                         <rect key="frame" x="366" y="242" width="94" height="59"/>
@@ -735,6 +746,7 @@
                         <accessibility description="CountdownTimerButton"/>
                         <connections>
                             <action selector="countdownTimerButton:" target="494" id="P57-8U-AY8"/>
+                            <outlet property="nextKeyView" destination="fBj-Kr-qX7" id="kjV-ij-0ep"/>
                         </connections>
                     </button>
                     <box autoresizesSubviews="NO" verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="EqC-e5-aH4">
@@ -752,6 +764,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="1gx-nR-cxN" id="qz8-q3-sf3"/>
+                        </connections>
                     </textField>
                     <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1gx-nR-cxN">
                         <rect key="frame" x="330" y="242" width="28" height="22"/>
@@ -761,6 +776,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="lp0-CX-Xc6" id="RdR-SL-QJ5"/>
+                        </connections>
                     </textField>
                     <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WmY-yn-nVs">
                         <rect key="frame" x="266" y="282" width="58" height="17"/>
@@ -797,6 +815,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="hMd-5z-pay" id="0Ko-lD-Wgr"/>
+                        </connections>
                     </textField>
                     <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFV-ri-VVq">
                         <rect key="frame" x="109" y="282" width="107" height="17"/>
@@ -815,6 +836,9 @@
                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <outlet property="nextKeyView" destination="w4w-rG-87a" id="RkN-Pa-cUd"/>
+                        </connections>
                     </textField>
                     <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WdT-Hf-Guc">
                         <rect key="frame" x="83" y="244" width="67" height="17"/>
@@ -835,6 +859,7 @@
                         <accessibility description="HideTimerButton"/>
                         <connections>
                             <action selector="hideTimerButton:" target="494" id="yDb-KJ-bU0"/>
+                            <outlet property="nextKeyView" destination="9ZX-tR-M6Q" id="rlf-Ao-bjj"/>
                         </connections>
                     </button>
                 </subviews>
