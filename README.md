@@ -23,6 +23,7 @@ Currently only CasparCG and QLab components are supported.
 - You can enter any [AMCP](http://casparcg.com/wiki/CasparCG_2.0_AMCP_Protocol) command into the Text Field. The required "\r\n" will automatically be appended to the string.
 - Near the top it will also display a section for trigging a countdown timer in CasparCG.
   - The Flash template is based heavily on the countdown timer provided by [tsipas](http://casparcg.com/forum/memberlist.php?mode=viewprofile&u=695) on the [CasparCG forums](http://casparcg.com/forum/viewtopic.php?t=1114&p=6225).
+  - See the [CasparCG Documentation](http://casparcg.com/wiki/Content_/_Media#Flash_Templates) for how to convert the .fla file to the .ft file that CasparCG requires.
 
 ## QLab
 
