@@ -6,6 +6,9 @@ Currently only CasparCG and QLab components are supported.
 
 ![screenshot](https://raw.githubusercontent.com/sneat/QLab-CasparCG-Atem-Bridge/master/Screenshot.png)
 
+## Download
+- https://github.com/sneat/QLab-CasparCG-Atem-Bridge/tree/master/Release
+
 ## Changelog v1.1
 - added QLab connection
 

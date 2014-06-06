@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180E1995194049E900E9CED5 /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180E1993194049E900E9CED5 /* VVBasics.framework */; };
-		180E1996194049E900E9CED5 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180E1994194049E900E9CED5 /* VVOSC.framework */; };
-		180E199719404A0700E9CED5 /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 180E1993194049E900E9CED5 /* VVBasics.framework */; };
-		180E199819404A0700E9CED5 /* VVOSC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 180E1994194049E900E9CED5 /* VVOSC.framework */; };
 		18796EC718764A5B0031AFDC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18796EC618764A5B0031AFDC /* Cocoa.framework */; };
 		18796ED118764A5B0031AFDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18796ECF18764A5B0031AFDC /* InfoPlist.strings */; };
 		18796ED318764A5B0031AFDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18796ED218764A5B0031AFDC /* main.m */; };
@@ -20,11 +16,10 @@
 		18796EDF18764A5B0031AFDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18796EDE18764A5B0031AFDC /* Images.xcassets */; };
 		18796EE618764A5B0031AFDC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18796EE518764A5B0031AFDC /* XCTest.framework */; };
 		18796EE718764A5B0031AFDC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18796EC618764A5B0031AFDC /* Cocoa.framework */; };
-		18796EEF18764A5B0031AFDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18796EED18764A5B0031AFDC /* InfoPlist.strings */; };
-		18796EF118764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18796EF018764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m */; };
+		188F828619415DB3000D16D3 /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F828419415DB3000D16D3 /* VVBasics.framework */; };
+		188F828719415DB3000D16D3 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F828519415DB3000D16D3 /* VVOSC.framework */; };
 		18B6298F189F34170069C43F /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6298E189F34170069C43F /* GCDAsyncSocket.m */; };
 		18B62991189F344A0069C43F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B62990189F344A0069C43F /* Security.framework */; };
-		18FFF86518ADE6D000F2C31A /* ACLPro.icns in Resources */ = {isa = PBXBuildFile; fileRef = 18FFF86418ADE6D000F2C31A /* ACLPro.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,16 +39,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				180E199719404A0700E9CED5 /* VVBasics.framework in CopyFiles */,
-				180E199819404A0700E9CED5 /* VVOSC.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		180E1993194049E900E9CED5 /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVBasics.framework; sourceTree = "<group>"; };
-		180E1994194049E900E9CED5 /* VVOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VVOSC.framework; sourceTree = "<group>"; };
 		18796EC318764A5B0031AFDC /* QLab CasparCG ATEM Bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QLab CasparCG ATEM Bridge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18796EC618764A5B0031AFDC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		18796EC918764A5B0031AFDC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -70,13 +61,11 @@
 		18796EDE18764A5B0031AFDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18796EE418764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QLab CasparCG ATEM BridgeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18796EE518764A5B0031AFDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		18796EEC18764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QLab CasparCG ATEM BridgeTests-Info.plist"; sourceTree = "<group>"; };
-		18796EEE18764A5B0031AFDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		18796EF018764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QLab_CasparCG_ATEM_BridgeTests.m; sourceTree = "<group>"; };
+		188F828419415DB3000D16D3 /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVBasics.framework; path = "QLab CasparCG ATEM Bridge/VVBasics.framework"; sourceTree = "<group>"; };
+		188F828519415DB3000D16D3 /* VVOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVOSC.framework; path = "QLab CasparCG ATEM Bridge/VVOSC.framework"; sourceTree = "<group>"; };
 		18B6298D189F34170069C43F /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		18B6298E189F34170069C43F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		18B62990189F344A0069C43F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		18FFF86418ADE6D000F2C31A /* ACLPro.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ACLPro.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180E1996194049E900E9CED5 /* VVOSC.framework in Frameworks */,
+				188F828719415DB3000D16D3 /* VVOSC.framework in Frameworks */,
 				18B62991189F344A0069C43F /* Security.framework in Frameworks */,
-				180E1995194049E900E9CED5 /* VVBasics.framework in Frameworks */,
+				188F828619415DB3000D16D3 /* VVBasics.framework in Frameworks */,
 				18796EC718764A5B0031AFDC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,8 +95,8 @@
 		180E19921940497100E9CED5 /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				180E1993194049E900E9CED5 /* VVBasics.framework */,
-				180E1994194049E900E9CED5 /* VVOSC.framework */,
+				188F828419415DB3000D16D3 /* VVBasics.framework */,
+				188F828519415DB3000D16D3 /* VVOSC.framework */,
 				18796EC618764A5B0031AFDC /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -116,9 +105,7 @@
 		18796EBA18764A5B0031AFDC = {
 			isa = PBXGroup;
 			children = (
-				18FFF86418ADE6D000F2C31A /* ACLPro.icns */,
 				18796ECC18764A5B0031AFDC /* QLab CasparCG ATEM Bridge */,
-				18796EEA18764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests */,
 				18796EC518764A5B0031AFDC /* Frameworks */,
 				18796EC418764A5B0031AFDC /* Products */,
 			);
@@ -176,24 +163,6 @@
 				18796ED218764A5B0031AFDC /* main.m */,
 				18796ED418764A5B0031AFDC /* QLab CasparCG ATEM Bridge-Prefix.pch */,
 				18796ED518764A5B0031AFDC /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		18796EEA18764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests */ = {
-			isa = PBXGroup;
-			children = (
-				18796EF018764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m */,
-				18796EEB18764A5B0031AFDC /* Supporting Files */,
-			);
-			path = "QLab CasparCG ATEM BridgeTests";
-			sourceTree = "<group>";
-		};
-		18796EEB18764A5B0031AFDC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				18796EEC18764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests-Info.plist */,
-				18796EED18764A5B0031AFDC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -277,7 +246,6 @@
 			files = (
 				18796ED118764A5B0031AFDC /* InfoPlist.strings in Resources */,
 				18796EDF18764A5B0031AFDC /* Images.xcassets in Resources */,
-				18FFF86518ADE6D000F2C31A /* ACLPro.icns in Resources */,
 				18796ED718764A5B0031AFDC /* Credits.rtf in Resources */,
 				18796EDD18764A5B0031AFDC /* MainMenu.xib in Resources */,
 			);
@@ -287,7 +255,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18796EEF18764A5B0031AFDC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18796EF118764A5B0031AFDC /* QLab_CasparCG_ATEM_BridgeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,14 +311,6 @@
 				18796EDC18764A5B0031AFDC /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		18796EED18764A5B0031AFDC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18796EEE18764A5B0031AFDC /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,6 +391,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QLab",
+					CasparCG,
+					ATEM,
+					Bridge,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Prefix.pch";
@@ -450,6 +412,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/QLab",
+					CasparCG,
+					ATEM,
+					Bridge,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QLab CasparCG ATEM Bridge/QLab CasparCG ATEM Bridge-Prefix.pch";
