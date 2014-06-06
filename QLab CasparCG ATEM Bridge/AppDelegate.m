@@ -8,25 +8,37 @@
 
 #import "AppDelegate.h"
 #import "GCDAsyncSocket.h"
+#import "VVOSC/VVOSC.h"
 
 @implementation AppDelegate
+OSCManager					*manager;
+OSCInPort					*inPort;
+OSCOutPort					*outPort;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    // create an OSCManager- set myself up as its delegate
+    manager = [[OSCManager alloc] init];
+    [manager setDelegate:self];
+    
+    // create an input port for receiving OSC data
+    [manager createNewInputForPort:53001];
+    
+    
 }
-- (IBAction)handleConnectButtonClick:(id)sender {
+- (IBAction)handleCasparConnectButtonClick:(id)sender {
     
     asyncSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
     NSError* error = Nil;
-    if (![asyncSocket connectToHost:[self.ipAddressTextField stringValue] onPort:[[self.portTextField stringValue] intValue] withTimeout:10 error:&error])
+    if (![asyncSocket connectToHost:[self.casparIPAddressTextField stringValue] onPort:[[self.casparPortTextField stringValue] intValue] withTimeout:10 error:&error])
     {
         NSLog(@"Failed to connect to CasparCG");
-        self.connectButton.title = @"Connect";
-        [self.commandTextLabel setHidden:true];
-        [self.commandTextField setHidden:true];
-        [self.sendCommandButton setHidden:true];
+        self.casparConnectButton.title = @"Connect";
+        [self.casparCommandTextLabel setHidden:true];
+        [self.casparCommandTextField setHidden:true];
+        [self.casparSendCommandButton setHidden:true];
         [self.countdownTimerButton setHidden:true];
         [self.hideTimerButton setHidden:true];
         [self.minutesLabel setHidden:true];
@@ -40,14 +52,47 @@
     }
     
 }
+- (IBAction)handleQlabConnectButtonClick:(id)sender {
+    // create an output so i can send OSC data to myself
+    outPort = [manager createNewOutputToAddress:[self.qlabIPAddressTextField stringValue] atPort:53000];
+    
+    NSString *command = @"/version";
+    OSCMessage *newMsg = [OSCMessage createWithAddress:command];
+    [newMsg addFloat:1.0];
+    [outPort sendThisMessage:newMsg];
+    NSLog(@"sent %@", command);
+}
+- (void) receivedOSCMessage:(OSCMessage *)m	{
+    NSArray *address = [[m address] componentsSeparatedByString:@"/"];
+    if ([[address objectAtIndex:1] isEqualToString:@"reply"]) {
+        NSString *jsonString = [m.value stringValue];
+        NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:nil];
+        NSLog(@"%@",json);
+        NSString *status = [json valueForKey:@"status"];
+        if (![status  isEqual: @"ok"]) {
+            NSLog(@"Did not get an ok status");
+        }
+        
+        if ([[address objectAtIndex:2] isEqualToString:@"version"]) {
+            NSString *qlabVersion = [json valueForKey:@"data"];
+            NSLog(@"data: %@", qlabVersion);
+            [self.qlabVersionLabel setStringValue:[NSString stringWithFormat:@"QLab v%@", qlabVersion]];
+            [self.qlabVersionLabel setHidden:false];
+            [self.qlabCommandTextLabel setHidden:false];
+            [self.qlabCommandTextField setHidden:false];
+            [self.qlabSendCommandButton setHidden:false];
+        }
+    }
+}
 
 - (void)socket:(GCDAsyncSocket *)sender didConnectToHost:(NSString *)host port:(UInt16)port
 {
     NSLog(@"Connected to CasparCG.");
-    self.connectButton.title = @"Connected";
-    [self.commandTextLabel setHidden:false];
-    [self.commandTextField setHidden:false];
-    [self.sendCommandButton setHidden:false];
+    self.casparConnectButton.title = @"Connected";
+    [self.casparCommandTextLabel setHidden:false];
+    [self.casparCommandTextField setHidden:false];
+    [self.casparSendCommandButton setHidden:false];
     [self.countdownTimerButton setHidden:false];
     [self.hideTimerButton setHidden:false];
     [self.minutesLabel setHidden:false];
@@ -59,9 +104,16 @@
     [self.templateLabel setHidden:false];
     [self.templateTextField setHidden:false];
 }
+- (IBAction)qlabSendCommandButton:(id)sender {
+    NSString *command = [self.qlabCommandTextField stringValue];
+    OSCMessage *newMsg = [OSCMessage createWithAddress:command];
+    [newMsg addFloat:1.0];
+    [outPort sendThisMessage:newMsg];
+    NSLog(@"sent %@", command);
+}
 
-- (IBAction)sendCommandButton:(id)sender {
-    NSString *command = [[self.commandTextField stringValue] stringByAppendingString:@"\r\n"];
+- (IBAction)casparSendCommandButton:(id)sender {
+    NSString *command = [[self.casparCommandTextField stringValue] stringByAppendingString:@"\r\n"];
     [asyncSocket writeData:[command dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES] withTimeout:-1 tag:1];
 }
 
@@ -81,5 +133,8 @@
     [asyncSocket writeData:[command dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES] withTimeout:-1 tag:1];
     command = [NSString stringWithFormat:@"CG %@ INVOKE 0 \"TimeStart\"\r\n", layer];
     [asyncSocket writeData:[command dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES] withTimeout:-1 tag:1];
+}
+- (IBAction)GithubPagePressed:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/sneat/QLab-CasparCG-Atem-Bridge/"]];
 }
 @end

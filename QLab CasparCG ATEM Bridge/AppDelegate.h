@@ -15,12 +15,12 @@
 }
 
 @property (assign) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSTextField *ipAddressTextField;
-@property (weak) IBOutlet NSTextField *portTextField;
-@property (weak) IBOutlet NSButton *connectButton;
-@property (weak) IBOutlet NSTextField *commandTextLabel;
-@property (weak) IBOutlet NSTextField *commandTextField;
-@property (weak) IBOutlet NSButton *sendCommandButton;
+@property (weak) IBOutlet NSTextField *casparIPAddressTextField;
+@property (weak) IBOutlet NSTextField *casparPortTextField;
+@property (weak) IBOutlet NSButton *casparConnectButton;
+@property (weak) IBOutlet NSTextField *casparCommandTextLabel;
+@property (weak) IBOutlet NSTextField *casparCommandTextField;
+@property (weak) IBOutlet NSButton *casparSendCommandButton;
 @property (weak) IBOutlet NSButton *countdownTimerButton;
 @property (weak) IBOutlet NSButton *hideTimerButton;
 @property (weak) IBOutlet NSTextField *minutesLabel;
@@ -31,5 +31,12 @@
 @property (weak) IBOutlet NSTextField *layerTextField;
 @property (weak) IBOutlet NSTextField *templateLabel;
 @property (weak) IBOutlet NSTextField *templateTextField;
+@property (weak) IBOutlet NSTextField *qlabIPAddressTextField;
+@property (weak) IBOutlet NSButton *qlabConnectButton;
+@property (weak) IBOutlet NSTextField *qlabCommandTextLabel;
+@property (weak) IBOutlet NSTextField *qlabCommandTextField;
+@property (weak) IBOutlet NSButton *qlabSendCommandButton;
+@property (weak) IBOutlet NSTextField *qlabVersionLabel;
+@property (unsafe_unretained) IBOutlet NSTextView *qlabDocumentationLabel;
 
 @end
