@@ -7,22 +7,192 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1854C6C919EE5B0000AD8C07 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1854C6A819EE5ACF00AD8C07 /* VVOSC.framework */; };
+		1854C6CA19EE5B0400AD8C07 /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1854C69A19EE5ACF00AD8C07 /* VVBasics.framework */; };
+		1854C6CB19EE5B1900AD8C07 /* VVOSC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1854C6A819EE5ACF00AD8C07 /* VVOSC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1854C6CC19EE5B1F00AD8C07 /* VVBasics.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1854C69A19EE5ACF00AD8C07 /* VVBasics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18796EC718764A5B0031AFDC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18796EC618764A5B0031AFDC /* Cocoa.framework */; };
 		18796ED118764A5B0031AFDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18796ECF18764A5B0031AFDC /* InfoPlist.strings */; };
 		18796ED318764A5B0031AFDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18796ED218764A5B0031AFDC /* main.m */; };
 		18796ED718764A5B0031AFDC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 18796ED518764A5B0031AFDC /* Credits.rtf */; };
 		18796EDA18764A5B0031AFDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18796ED918764A5B0031AFDC /* AppDelegate.m */; };
 		18796EDD18764A5B0031AFDC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18796EDB18764A5B0031AFDC /* MainMenu.xib */; };
-		18796EDF18764A5B0031AFDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18796EDE18764A5B0031AFDC /* Images.xcassets */; };
 		18796EE618764A5B0031AFDC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18796EE518764A5B0031AFDC /* XCTest.framework */; };
 		18796EE718764A5B0031AFDC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18796EC618764A5B0031AFDC /* Cocoa.framework */; };
-		188F828619415DB3000D16D3 /* VVBasics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F828419415DB3000D16D3 /* VVBasics.framework */; };
-		188F828719415DB3000D16D3 /* VVOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F828519415DB3000D16D3 /* VVOSC.framework */; };
 		18B6298F189F34170069C43F /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6298E189F34170069C43F /* GCDAsyncSocket.m */; };
 		18B62991189F344A0069C43F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B62990189F344A0069C43F /* Security.framework */; };
+		18FE1D0219EE5E2200F8913D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FE1D0119EE5E2200F8913D /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1854C69919EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 961EA8ED100E8565007E6C25;
+			remoteInfo = VVBasics;
+		};
+		1854C69B19EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C8073A19817C1600FA7825;
+			remoteInfo = VVBufferPool;
+		};
+		1854C69D19EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C8071219817BFE00FA7825;
+			remoteInfo = DDMathParser;
+		};
+		1854C69F19EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C8072619817C0A00FA7825;
+			remoteInfo = JSONKit;
+		};
+		1854C6A119EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 964FF27D1981B5AF00CCC808;
+			remoteInfo = VVISFKit;
+		};
+		1854C6A319EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B06C1C18BE0ECF000A921C;
+			remoteInfo = VVUIToolbox;
+		};
+		1854C6A519EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 961745F4100F86B400FB60E6;
+			remoteInfo = VVMIDI;
+		};
+		1854C6A719EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9628D0C5100E89F700C3944E;
+			remoteInfo = VVOSC;
+		};
+		1854C6A919EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 968FAA86108B6141000E470D;
+			remoteInfo = CrashReporterTestApp;
+		};
+		1854C6AB19EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9656D900100F89BA0064EEA6;
+			remoteInfo = MIDITestApp;
+		};
+		1854C6AD19EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9628D179100E8B4D00C3944E;
+			remoteInfo = OSCTestApp;
+		};
+		1854C6AF19EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B49302106AEB4C008FB26E;
+			remoteInfo = MIDIviaOSC;
+		};
+		1854C6B119EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 966CCBD81431EFB9006D580F;
+			remoteInfo = OSCQueryTest;
+		};
+		1854C6B319EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96ACD7211706416300138AE6;
+			remoteInfo = OSCPingTester;
+		};
+		1854C6B519EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C18C2D185A1A740082DE35;
+			remoteInfo = VVBasicsStatic;
+		};
+		1854C6B719EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C18C3E185A1A7D0082DE35;
+			remoteInfo = VVOSCStatic;
+		};
+		1854C6B919EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A6F726619033A9D00A6FBAD;
+			remoteInfo = VVUIToolboxStatic;
+		};
+		1854C6BB19EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 965C1CAC1983BE7D00111741;
+			remoteInfo = "GLScene Test App";
+		};
+		1854C6BD19EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 965C1CC71983BE9A00111741;
+			remoteInfo = "QCGLScene Test App";
+		};
+		1854C6BF19EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 965C1CE21983BEA200111741;
+			remoteInfo = "CIGLScene Test App";
+		};
+		1854C6C119EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 965C1CFD198403C300111741;
+			remoteInfo = "ISFGLScene Test App";
+		};
+		1854C6C319EE5ACF00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96140109198AD46D00335292;
+			remoteInfo = "QT and Hap Test App";
+		};
+		1854C6C519EE5AE900AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9628D0C4100E89F700C3944E;
+			remoteInfo = VVOSC;
+		};
+		1854C6C719EE5AEE00AD8C07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 961EA8EC100E8565007E6C25;
+			remoteInfo = VVBasics;
+		};
 		18796EE818764A5B0031AFDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 18796EBB18764A5B0031AFDC /* Project object */;
@@ -39,12 +209,15 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1854C6CC19EE5B1F00AD8C07 /* VVBasics.framework in CopyFiles */,
+				1854C6CB19EE5B1900AD8C07 /* VVOSC.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VVOpenSource.xcodeproj; path = ../dev/vvopensource/VVOpenSource.xcodeproj; sourceTree = "<group>"; };
 		18796EC318764A5B0031AFDC /* QLab CasparCG ATEM Bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QLab CasparCG ATEM Bridge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18796EC618764A5B0031AFDC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		18796EC918764A5B0031AFDC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -58,14 +231,12 @@
 		18796ED818764A5B0031AFDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18796ED918764A5B0031AFDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18796EDC18764A5B0031AFDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		18796EDE18764A5B0031AFDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18796EE418764A5B0031AFDC /* QLab CasparCG ATEM BridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QLab CasparCG ATEM BridgeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18796EE518764A5B0031AFDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		188F828419415DB3000D16D3 /* VVBasics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVBasics.framework; path = "QLab CasparCG ATEM Bridge/VVBasics.framework"; sourceTree = "<group>"; };
-		188F828519415DB3000D16D3 /* VVOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VVOSC.framework; path = "QLab CasparCG ATEM Bridge/VVOSC.framework"; sourceTree = "<group>"; };
 		18B6298D189F34170069C43F /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		18B6298E189F34170069C43F /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		18B62990189F344A0069C43F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18FE1D0119EE5E2200F8913D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +244,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				188F828719415DB3000D16D3 /* VVOSC.framework in Frameworks */,
+				1854C6CA19EE5B0400AD8C07 /* VVBasics.framework in Frameworks */,
+				1854C6C919EE5B0000AD8C07 /* VVOSC.framework in Frameworks */,
 				18B62991189F344A0069C43F /* Security.framework in Frameworks */,
-				188F828619415DB3000D16D3 /* VVBasics.framework in Frameworks */,
 				18796EC718764A5B0031AFDC /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,11 +266,38 @@
 		180E19921940497100E9CED5 /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				188F828419415DB3000D16D3 /* VVBasics.framework */,
-				188F828519415DB3000D16D3 /* VVOSC.framework */,
 				18796EC618764A5B0031AFDC /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1854C67E19EE5ACF00AD8C07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1854C69A19EE5ACF00AD8C07 /* VVBasics.framework */,
+				1854C69C19EE5ACF00AD8C07 /* VVBufferPool.framework */,
+				1854C69E19EE5ACF00AD8C07 /* DDMathParser.framework */,
+				1854C6A019EE5ACF00AD8C07 /* JSONKit.framework */,
+				1854C6A219EE5ACF00AD8C07 /* VVISFKit.framework */,
+				1854C6A419EE5ACF00AD8C07 /* VVUIToolbox.framework */,
+				1854C6A619EE5ACF00AD8C07 /* VVMIDI.framework */,
+				1854C6A819EE5ACF00AD8C07 /* VVOSC.framework */,
+				1854C6AA19EE5ACF00AD8C07 /* CrashReporterTestApp.app */,
+				1854C6AC19EE5ACF00AD8C07 /* MIDITestApp.app */,
+				1854C6AE19EE5ACF00AD8C07 /* OSCTestApp.app */,
+				1854C6B019EE5ACF00AD8C07 /* MIDIviaOSC.app */,
+				1854C6B219EE5ACF00AD8C07 /* OSCQueryTest.app */,
+				1854C6B419EE5ACF00AD8C07 /* OSCPingTester.app */,
+				1854C6B619EE5ACF00AD8C07 /* libVVBasics.a */,
+				1854C6B819EE5ACF00AD8C07 /* libVVOSC.a */,
+				1854C6BA19EE5ACF00AD8C07 /* libVVUIToolbox.a */,
+				1854C6BC19EE5ACF00AD8C07 /* GLScene Test App.app */,
+				1854C6BE19EE5ACF00AD8C07 /* QCGLScene Test App.app */,
+				1854C6C019EE5ACF00AD8C07 /* CIGLScene Test App.app */,
+				1854C6C219EE5ACF00AD8C07 /* ISFGLScene Test App.app */,
+				1854C6C419EE5ACF00AD8C07 /* QT and Hap Test App.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		18796EBA18764A5B0031AFDC = {
@@ -108,6 +306,7 @@
 				18796ECC18764A5B0031AFDC /* QLab CasparCG ATEM Bridge */,
 				18796EC518764A5B0031AFDC /* Frameworks */,
 				18796EC418764A5B0031AFDC /* Products */,
+				1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,7 +348,7 @@
 				18B6298D189F34170069C43F /* GCDAsyncSocket.h */,
 				18B6298E189F34170069C43F /* GCDAsyncSocket.m */,
 				18796EDB18764A5B0031AFDC /* MainMenu.xib */,
-				18796EDE18764A5B0031AFDC /* Images.xcassets */,
+				18FE1D0119EE5E2200F8913D /* Images.xcassets */,
 				18796ECD18764A5B0031AFDC /* Supporting Files */,
 			);
 			path = "QLab CasparCG ATEM Bridge";
@@ -182,6 +381,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1854C6C819EE5AEE00AD8C07 /* PBXTargetDependency */,
+				1854C6C619EE5AE900AD8C07 /* PBXTargetDependency */,
 			);
 			name = "QLab CasparCG ATEM Bridge";
 			productName = "QLab CasparCG ATEM Bridge";
@@ -231,6 +432,12 @@
 			mainGroup = 18796EBA18764A5B0031AFDC;
 			productRefGroup = 18796EC418764A5B0031AFDC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1854C67E19EE5ACF00AD8C07 /* Products */;
+					ProjectRef = 1854C67D19EE5ACF00AD8C07 /* VVOpenSource.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				18796EC218764A5B0031AFDC /* QLab CasparCG ATEM Bridge */,
@@ -239,14 +446,171 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		1854C69A19EE5ACF00AD8C07 /* VVBasics.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVBasics.framework;
+			remoteRef = 1854C69919EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C69C19EE5ACF00AD8C07 /* VVBufferPool.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVBufferPool.framework;
+			remoteRef = 1854C69B19EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C69E19EE5ACF00AD8C07 /* DDMathParser.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DDMathParser.framework;
+			remoteRef = 1854C69D19EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6A019EE5ACF00AD8C07 /* JSONKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONKit.framework;
+			remoteRef = 1854C69F19EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6A219EE5ACF00AD8C07 /* VVISFKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVISFKit.framework;
+			remoteRef = 1854C6A119EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6A419EE5ACF00AD8C07 /* VVUIToolbox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVUIToolbox.framework;
+			remoteRef = 1854C6A319EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6A619EE5ACF00AD8C07 /* VVMIDI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVMIDI.framework;
+			remoteRef = 1854C6A519EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6A819EE5ACF00AD8C07 /* VVOSC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVOSC.framework;
+			remoteRef = 1854C6A719EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6AA19EE5ACF00AD8C07 /* CrashReporterTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CrashReporterTestApp.app;
+			remoteRef = 1854C6A919EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6AC19EE5ACF00AD8C07 /* MIDITestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MIDITestApp.app;
+			remoteRef = 1854C6AB19EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6AE19EE5ACF00AD8C07 /* OSCTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OSCTestApp.app;
+			remoteRef = 1854C6AD19EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6B019EE5ACF00AD8C07 /* MIDIviaOSC.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MIDIviaOSC.app;
+			remoteRef = 1854C6AF19EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6B219EE5ACF00AD8C07 /* OSCQueryTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OSCQueryTest.app;
+			remoteRef = 1854C6B119EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6B419EE5ACF00AD8C07 /* OSCPingTester.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OSCPingTester.app;
+			remoteRef = 1854C6B319EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6B619EE5ACF00AD8C07 /* libVVBasics.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVVBasics.a;
+			remoteRef = 1854C6B519EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6B819EE5ACF00AD8C07 /* libVVOSC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVVOSC.a;
+			remoteRef = 1854C6B719EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6BA19EE5ACF00AD8C07 /* libVVUIToolbox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVVUIToolbox.a;
+			remoteRef = 1854C6B919EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6BC19EE5ACF00AD8C07 /* GLScene Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "GLScene Test App.app";
+			remoteRef = 1854C6BB19EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6BE19EE5ACF00AD8C07 /* QCGLScene Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "QCGLScene Test App.app";
+			remoteRef = 1854C6BD19EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6C019EE5ACF00AD8C07 /* CIGLScene Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "CIGLScene Test App.app";
+			remoteRef = 1854C6BF19EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6C219EE5ACF00AD8C07 /* ISFGLScene Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "ISFGLScene Test App.app";
+			remoteRef = 1854C6C119EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1854C6C419EE5ACF00AD8C07 /* QT and Hap Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "QT and Hap Test App.app";
+			remoteRef = 1854C6C319EE5ACF00AD8C07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		18796EC118764A5B0031AFDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18796ED118764A5B0031AFDC /* InfoPlist.strings in Resources */,
-				18796EDF18764A5B0031AFDC /* Images.xcassets in Resources */,
 				18796ED718764A5B0031AFDC /* Credits.rtf in Resources */,
+				18FE1D0219EE5E2200F8913D /* Images.xcassets in Resources */,
 				18796EDD18764A5B0031AFDC /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +645,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1854C6C619EE5AE900AD8C07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VVOSC;
+			targetProxy = 1854C6C519EE5AE900AD8C07 /* PBXContainerItemProxy */;
+		};
+		1854C6C819EE5AEE00AD8C07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VVBasics;
+			targetProxy = 1854C6C719EE5AEE00AD8C07 /* PBXContainerItemProxy */;
+		};
 		18796EE918764A5B0031AFDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 18796EC218764A5B0031AFDC /* QLab CasparCG ATEM Bridge */;
@@ -387,6 +761,7 @@
 		18796EF518764A5B0031AFDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -408,6 +783,7 @@
 		18796EF618764A5B0031AFDC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
